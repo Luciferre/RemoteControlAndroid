@@ -1,0 +1,38 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+ 	<style name="edit_text">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/component_height</item>
+    </style>
+    
+ 	 <style name="button">
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">@color/button_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+ 	 <style name="item_scroll_split_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/item_split_line</item>
+    </style>
+ 	 <style name="List"><item name="android:paddingBottom">0dip</item><item name="android:fadingEdge">none</item><item name="android:layout_width">fill_parent</item><item name="android:layout_height">fill_parent</item><item name="android:listSelector">@android:color/transparent</item><item name="android:cacheColorHint">@android:color/transparent</item><item name="android:groupIndicator">@null</item><item name="android:childDivider">@null</item><item name="android:headerDividersEnabled">false</item><item name="android:smoothScrollbar">true</item></style>
+</resources>

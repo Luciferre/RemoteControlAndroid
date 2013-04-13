@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:padding="@dimen/main_padding" >
+
+        <TextView
+            android:id="@+id/textViewFocus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+        <!-- ip设置开始 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayoutInputAreas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFocus"
+            android:background="@drawable/bg_auto_draw"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewIp"
+                    android:layout_width="@dimen/component_title_width"
+                    android:layout_height="@dimen/component_height"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/main_activity_setting_ip_host"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextIp"
+                    style="@style/edit_text"
+                    android:layout_below="@id/textViewFocus"
+                    android:layout_toRightOf="@id/textViewIp"
+                    android:text="192.168.1.101" />
+
+                <ImageView
+                    style="@style/item_scroll_split_line"
+                    android:layout_below="@id/editTextIp" />
+            </RelativeLayout>
+            <!-- ip设置结束 -->
+            <!-- 端口开始 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewPort"
+                    android:layout_width="@dimen/component_title_width"
+                    android:layout_height="@dimen/component_height"
+                    android:layout_below="@id/textViewIp"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/main_activity_setting_port"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextPort"
+                    style="@style/edit_text"
+                    android:layout_below="@id/textViewIp"
+                    android:layout_toRightOf="@id/textViewPort"
+                    android:numeric="integer" />
+
+                <ImageView
+                    style="@style/item_scroll_split_line"
+                    android:layout_below="@id/editTextPort" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewPortScreen"
+                    android:layout_width="@dimen/component_title_width"
+                    android:layout_height="@dimen/component_height"
+                    android:gravity="center_vertical|left"
+                    android:numeric="integer"
+                    android:text="@string/main_activity_setting_port_screen"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextPortScreen"
+                    style="@style/edit_text"
+                    android:layout_toRightOf="@id/textViewPortScreen"
+                    android:numeric="integer" />
+
+                <ImageView
+                    style="@style/item_scroll_split_line"
+                    android:layout_below="@id/editTextPortScreen" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 端口结束 -->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonLink"
+        style="@style/button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/component_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Connect" />
+
+</RelativeLayout>

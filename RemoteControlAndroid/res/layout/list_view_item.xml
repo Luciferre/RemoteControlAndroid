@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:background="@drawable/bg_auto_draw"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewChracter"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#88CCCCCC"
+        android:gravity="center"
+        android:textColor="#00000000"
+        android:textStyle="bold" />
+
+</LinearLayout>

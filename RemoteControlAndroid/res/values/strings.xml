@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RemoteControlAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="Connect">Connect</string>
+    <string name="main_activity_setting_ip_host">HOST IP:</string>
+    <string name="main_activity_setting_port">PC PORT:</string>
+    <string name="main_activity_setting_port_screen">SC PORT:</string>
+
+</resources>

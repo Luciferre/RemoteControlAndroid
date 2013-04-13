@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgcolor">#ebf0f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="item_split_line">#93b4c5</color>
+    <color name="button_color">#ebf0f3</color>
+    <color name="black">#00000000</color>
+    
+</resources>
